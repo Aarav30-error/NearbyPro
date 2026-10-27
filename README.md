@@ -272,9 +272,12 @@ Test coverage includes:
    - `VITE_API_URL`: `https://<your-render-url>/api`
 4. Deploy. The `vercel.json` SPA configuration ensures all client routes resolve to `/index.html`.
 
+### Repository Link
+- **GitHub Repository**: [https://github.com/Aarav30-error/NearbyPro](https://github.com/Aarav30-error/NearbyPro)
+
 ### Live Links (Placeholders)
-- **Live Frontend**: `https://nearbypro.vercel.app`
-- **Live Backend API**: `https://nearbypro-api.onrender.com/api`
+- **Live Frontend (Vercel)**: `https://nearby-pro.vercel.app` (or your assigned Vercel URL)
+- **Live Backend API (Render)**: `https://nearbypro-api.onrender.com/api` (or your assigned Render URL)
 
 ---
 
