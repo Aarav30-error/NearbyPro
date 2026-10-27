@@ -275,9 +275,10 @@ Test coverage includes:
 ### Repository Link
 - **GitHub Repository**: [https://github.com/Aarav30-error/NearbyPro](https://github.com/Aarav30-error/NearbyPro)
 
-### Live Links (Placeholders)
-- **Live Frontend (Vercel)**: `https://nearby-pro.vercel.app` (or your assigned Vercel URL)
-- **Live Backend API (Render)**: `https://nearbypro-api.onrender.com/api` (or your assigned Render URL)
+### Live Links
+- **Live Frontend (Vercel)**: [https://nearby-pro-r7hi.vercel.app](https://nearby-pro-r7hi.vercel.app)
+- **Live Backend API (Render)**: [https://nearbypro-api.onrender.com/api](https://nearbypro-api.onrender.com/api)
+- **API Health Check**: [https://nearbypro-api.onrender.com/api/health](https://nearbypro-api.onrender.com/api/health)
 
 ---
 
