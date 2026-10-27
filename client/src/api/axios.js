@@ -1,7 +1,13 @@
 import axios from 'axios';
 
+let rawBaseURL = import.meta.env.VITE_API_URL || 'https://nearbypro-api.onrender.com/api';
+rawBaseURL = rawBaseURL.trim().replace(/\/+$/, '');
+if (!rawBaseURL.endsWith('/api')) {
+  rawBaseURL = `${rawBaseURL}/api`;
+}
+
 const api = axios.create({
-  baseURL: import.meta.env.VITE_API_URL || 'https://nearbypro-api.onrender.com/api',
+  baseURL: rawBaseURL,
 });
 
 // Request interceptor to attach JWT token

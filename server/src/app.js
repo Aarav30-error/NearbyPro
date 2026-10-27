@@ -44,8 +44,8 @@ if (env.NODE_ENV !== 'test') {
   app.use(morgan('dev'));
 }
 
-// Health check endpoint
-app.get('/api/health', (req, res) => {
+// Health check endpoints
+app.get(['/api/health', '/health'], (req, res) => {
   res.status(200).json({
     success: true,
     status: 'ok',
@@ -57,6 +57,12 @@ app.use('/api/auth', authRoutes);
 app.use('/api/services', serviceRoutes);
 app.use('/api/requests', requestRoutes);
 app.use('/api/reviews', reviewRoutes);
+
+// Fallback direct routes (in case client omits /api prefix)
+app.use('/auth', authRoutes);
+app.use('/services', serviceRoutes);
+app.use('/requests', requestRoutes);
+app.use('/reviews', reviewRoutes);
 
 // Error handlers
 app.use(notFound);
